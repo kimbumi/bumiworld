@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@200;300;400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body,
+html
+{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: rgba(17,17,17,1)
+}
+
+
+
+body::-webkit-scrollbar{
+    width: 0.25rem
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--bg-gray)
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--text-primary)
+}
+::selection {
+    background: var(--bg-gray);
+    color: #fff;
+ }
+
+:root{
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight:400;
+    --secondary-font: 'IBM Plex Mono', monospace;
+    --secondary-font-sans: 'IBM Plex Sans', sans-serif;
+    --border-radius: 10px;
+    --text-primary: #fcfcfc;
+    --bg-gray: #212121;
+    --bg-point: #7be0c9;
+    --bg-gradient: linear-gradient(90deg, rgba(0, 68, 73, 0) 0%, rgba(0, 68, 73, 0.767) 75%);
+    --transition-speed: 0.2s;
+    --transition-speed: 0.2s;
+    --max--width: 1200px;
+}
+
+
+
+hr{
+    border: 1px solid var(--bg-gray);
+    margin-bottom: 6rem;
+    
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    color: #0e8a65;
+
+}
+
+a:hover{
+    color: var(--text-primary);
+
+}
+
+
+
+/* Nav */
+
+
+.logo{
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    width:100%
+}
+
+
+.logo i{
+    min-width: 2rem;
+    font-size: 32px;
+    margin:0 1.5rem;
+    color: #ec71ec;
+    transition: all var(--transition-speed) ease;
+    transform: rotate(0deg);
+}
+
+
+
+
+.navbar{
+    position: fixed;
+    width:10rem;
+    height:100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(34,34,34,0) 0%, rgba(34,34,34,0.4) 75%);
+    z-index: 1000;
+    right:0px;
+    transition: width var(--transition-speed) ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+}
+
+.nav-item{
+    width:100%;
+}
+
+
+.nav-link{
+    display: flex;
+    float: right;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    transition: all var(--transition-speed) ease;
+    filter: grayscale(100%) opacity(0.6);
+
+}
+
+.nav-item i{
+    min-width: 2rem;
+    font-size: 32px;
+    margin:0 1.5rem;
+    color: var(--bg-point);
+    transition: all var(--transition-speed) ease;
+
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+
+
+
+.section{
+    position: relative;
+    width: 100%;
+    height:100%;
+    min-height: 40vh;
+    line-height:1.6rem;
+    background-color: rgb(20, 20, 20);
+
+    
+}
+
+.headline{
+    font-size: 3rem;
+    padding: 2em 2rem;
+    color: var(--text-primary);
+}
+
+.projectContainer{
+    min-height: 100vh;
+
+}
+
+.flexGrid{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50%, auto));
+	grid-auto-rows: minmax(70vh, auto);
+
+}
+
+.project-item:nth-child(3n+0){
+    grid-column: 1 / span 2;
+
+}
+
+.project-item{
+    width: 100%;
+    height:auto;
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.projectName{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.8rem;
+    width: 100%;
+    height:100%;
+    font-size: 4rem;
+    font-family: var(--secondary-font-sans);
+    color: var(--text-primary);
+    text-align: center;
+    font-weight: 900;
+    line-height: 130%;
+}
+
+
+
+.work{
+    color: #0e8a65;
+    
+
+}
+.workWrapper{
+    width:80%;
+    max-width: var(--max--width);
+    margin: 0 auto;
+
+
+}
+
+
+.contact > a{
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    text-align: center;
+
+
+}
+.contactTitle{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .8rem;
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+    
+
+/* Hover */
+
+
+
+.logo:hover{
+    background: linear-gradient(90deg, rgba(17,17,17,0) 0%, rgba(143, 45, 255, 0.479) 86%);
+}
+
+.navbar:hover .fa-angle-double-left{
+    transform: rotate(180deg);
+}
+
+
+.navbar:hover{
+    width: 12rem;
+}
+
+
+.navbar:hover .link-text{
+   display: block;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+}
+
+.nav-item:hover{
+    background: var(--bg-gradient);
+}
+ 
+/* Hover */
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+  
+
+
+    .nav-link:active{
+        filter: grayscale(0%) opacity(1);
+    }
+
+
+    .logo:active{
+        background: linear-gradient(90deg, rgba(17,17,17,0) 0%, rgba(143, 45, 255, 0.479) 86%);
+    }
+    
+        
+    .nav-item:active{
+        background: var(--bg-gradient);
+    }
+
+    .flexGrid{
+        grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+        grid-auto-rows: minmax(80vh, auto);
+
+    
+    }
+
+    .project-item:nth-child(3n+0){
+        grid-column: 1 / span 1;
+    }
+
+
+        
+
+    
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .heroTitle{
+    
+        font-size:1.8rem;
+    
+    }
+
+    .navbar{
+       
+        width: 7rem;
+        background: linear-gradient(90deg, rgba(34,34,34,0) 0%, rgba(34,34,34,0.4) 75%);
+     
+    }
+    .nav-item i{
+        
+        min-width:1rem;
+        font-size: 24px;
+        margin:0 1rem;
+
+    }
+   
+    .logo i{
+        min-width: 1rem;
+        margin:0 1rem;
+
+    }
+
+  
+    
+  }
+

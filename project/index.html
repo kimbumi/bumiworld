@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./resource/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Project</title>
+</head>
+<body>
+<style>
+
+  body{
+     background: radial-gradient(circle, rgba(54,54,54,1) 0%, rgba(0,0,0,1) 100%);
+  }
+
+</style>
+<body>
+    <main  id="main">
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="https://kimbumi.github.io/bumiworld/" class="nav-link">
+                    <span class="link-text">BumiKim</span>
+                    <i class="fas fa-angle-double-left"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://kimbumi.github.io/bumiworld/about/" class="nav-link">
+                    <span class="link-text">About</span>
+                    <i class="fad fa-user-astronaut"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#project" class="nav-link">
+                    <span class="link-text">Project</span>
+                    <i class="fas fa-vial"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="project" class="section projectContainer">
+        <!-- <div class="headline">Lab</div> -->
+        <div class="flexGrid">
+                <div style="background-color: #ffb951" class="project-item">
+                        <div class="projectName">User testing study</div>
+                        <a><div style="background-image: url('/resource/thumbnail/2.png')" class="img"></div></a>
+                </div>
+            <div  style="background-color: #2A4858"class="project-item">
+                <div class="projectName">UX case study</div>
+                <a><div style="background-image: url('/resource/thumbnail/1.png')" class="img"></div></a>
+            </div>
+            <div style="background-color: #009C8F" class="project-item">
+                <div class="projectName">UX case study</div>
+                <a><div style="background-image: url('/resource/thumbnail/0.png')" class="img"></div></a>
+            </div>
+        </div>
+    </div>  
+
+    <div id="work" class="section work">  
+        <div class="workWrapper">  
+                <hr>
+                <div class="contact">
+                    <div class="contactTitle">Contact</div>
+                    <a href = "mailto: bumikim26@gmail.com"><div>bumikim26@gmail.com</div></a>
+                    <a href="https://www.linkedin.com/in/bumi-kim/" target="_blank"><div>Linked in</div></a> 
+                    <a href="https://www.behance.net/bumi1" target="_blank"><div>Behance</div></a>
+                    <a href="https://github.com/kimbumi" target="_blank"><div>Github</div></a>
+                   
+                </div>
+             
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+
+    const item = document.getElementsByClassName('img')
+   const imgArray = []
+      for(let i = 0; i < item.length; i++){ 
+        imgArray.push(item[i])
+    }
+    // console.log(imgArray[0])
+    console.log(item[0])
+
+
+    imgArray.forEach(element => {
+        element.addEventListener('mouseenter', ()=>{
+            element.style.opacity = 1
+        })
+       
+    }) 
+
+    imgArray.forEach(element => {
+        element.addEventListener('mouseleave', ()=>{
+            element.style.opacity = 0
+        })
+       
+    }) 
+
+</script>
+</body>
+</html>
