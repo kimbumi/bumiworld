@@ -209,7 +209,7 @@ a:hover{
 
 .projectName{
     position: absolute;
-    display: inline-block;
+    display: block;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -382,14 +382,14 @@ a:hover{
     }
 
     .projectName{
-        padding:1rem;
-        font-size: 3rem;
+        padding:2rem 0 0 1rem;
+        font-size: 3.2rem;
         line-height: 1.5rem;
     }
 
 
     .projectName span{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     
