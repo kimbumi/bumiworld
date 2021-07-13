@@ -169,15 +169,15 @@ a:hover{
     color: var(--text-primary);
 }
 
-.projectContainer{
+/* .projectContainer{
     min-height: 100vh;
 
-}
+} */
 
 .flexGrid{
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(50%, auto));
-	grid-auto-rows: minmax(70vh, auto);
+	grid-auto-rows: minmax(80vh, auto);
 
 }
 
@@ -198,7 +198,7 @@ a:hover{
     background-position: center;
     background-size: cover;
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     -moz-transition: opacity 0.3s ease-in-out;
     -webkit-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
@@ -209,20 +209,25 @@ a:hover{
 
 .projectName{
     position: absolute;
-    display: flex;
+    display: inline-block;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    padding:0.8rem;
-    width: 100%;
-    height:100%;
-    font-size: 4rem;
-    font-family: var(--secondary-font-sans);
+    justify-content: center; */
+    padding:3rem;
+    /* width: 100%;
+    height:100%; */
+    font-size: 8rem;
+    font-family: var(--text-primary);
     color: var(--text-primary);
-    text-align: center;
-    font-weight: 900;
-    line-height: 130%;
+    /* text-align: center; */
+    font-weight: 500;
+    line-height: 3.5rem;
+    z-index: 1001;
 }
 
+.projectName span{
+    font-size: 4rem;
+}
 
 
 .work{
@@ -369,6 +374,25 @@ a:hover{
 
     }
 
+    .flexGrid{
+        grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+        grid-auto-rows: minmax(60vh, auto);
+
+    
+    }
+
+    .projectName{
+        padding:1rem;
+        font-size: 3rem;
+        line-height: 1.5rem;
+    }
+
+
+    .projectName span{
+        font-size: 1.4rem;
+    }
+
+    
   
     
   }
