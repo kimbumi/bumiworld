@@ -181,15 +181,15 @@ a:hover{
 
 }
 
-.project-item:nth-child(3n+0){
+.project-item:nth-child(odd):last-of-type{
     grid-column: 1 / span 2;
-
 }
 
 .project-item{
     width: 100%;
     height:auto;
     position: relative;
+    
 }
 
 .img{
@@ -216,17 +216,17 @@ a:hover{
     padding:3rem;
     /* width: 100%;
     height:100%; */
-    font-size: 8rem;
+    font-size: 7.5rem;
     font-family: var(--text-primary);
     color: var(--text-primary);
     /* text-align: center; */
     font-weight: 500;
-    line-height: 3.5rem;
+    line-height: 3rem;
     z-index: 1001;
 }
 
 .projectName span{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 
@@ -324,8 +324,7 @@ a:hover{
 
     
     }
-
-    .project-item:nth-child(3n+0){
+    .project-item:nth-child(odd):last-of-type{
         grid-column: 1 / span 1;
     }
 

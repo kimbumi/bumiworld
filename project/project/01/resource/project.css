@@ -1,0 +1,981 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*
+{
+  margin:0;
+padding: 0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*mobile size*/
+
+body{
+    background-color: #e6dee9;
+    color:rgba(29,30,33);
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+
+
+section{
+
+    width:100%;
+    padding: 0px;
+    
+
+    
+
+}
+
+
+.button-section{
+    background-color: white;
+    display: block;
+    
+    text-align: center;
+    
+}
+
+
+.main-button{
+    position: relative;
+    display: inline-block;
+    color: rgba(29,30,33);
+    border: 1px solid rgba(29,30,33);
+    padding:14px 30px;
+    font-size:.8rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight:400;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    transition: .3s ease all;
+
+
+}
+
+.main-button:hover {
+    color:rgb(4, 236, 205);
+    border: 1px solid rgb(4, 236, 205);}
+
+
+  /* Nav bar */
+  .container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+
+
+}
+/* Nav Bar  */
+#nav-bar {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	
+}
+.nav-bar {
+
+	left: 0;
+	top: 0;
+	padding:16px;
+	width: 100%;
+}
+
+.back {
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    color: rgb(112, 112, 112);
+    border-radius: 50px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05), 
+    0 2px 2px rgba(0,0,0,0.05), 
+    0 4px 4px rgba(0,0,0,0.05), 
+    0 8px 8px rgba(0,0,0,0.05),
+    0 16px 16px rgba(0,0,0,0.05);
+    border:0.5px solid rgb(240, 240, 240);    
+}
+
+
+.back i {
+    font-size: 21px;
+    position:relative;
+    color: rgb(112, 112, 112);
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  /* project section */
+
+.strong{
+   
+    font-weight:600;
+}
+
+
+.projectbanner{
+    display: flex;
+    flex-direction: column;
+  
+}
+.project-container{
+    width: 100%;
+    height: auto;
+    
+}
+
+.project-img{
+        width: 100%;
+        height: 55vh;
+        display: block;
+        background-image: url(projectbanner.jpg);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        background-position: center;
+        margin-right: auto;
+    margin-left: auto;
+   
+}
+  
+
+
+
+
+.project-text-container{
+    
+    padding:80px 20px;
+    background-color: white;
+    display: block;
+
+    
+    
+    }
+
+.detail-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+
+}
+
+.heading{
+    font-size:1.4rem;
+    font-weight: 600;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    padding-bottom: 1.4rem;
+
+
+}
+
+.project-text-container .detail div{
+    padding:.8rem 0;
+}
+
+.project-text-container .overview{
+    padding:.8rem 0;
+}
+
+
+.project-text-container h5{
+    font-size:1.2rem;
+    font-weight: 600;
+    color: rgb(16, 209, 183);
+    margin-bottom:.6rem;
+}
+
+.project-text-container p{
+    font-size:18px;
+    font-weight: 300;
+    line-height: 2rem;}
+
+
+.projectmain{
+    min-height: 30vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    
+
+
+}
+
+
+.article-container{
+    height: auto;
+    padding:80px 20px;
+    width: 100%;
+    
+    
+}
+
+.article-heading h5{
+    font-size:1.2rem;
+    font-weight: 600;
+    color: rgb(16, 209, 183);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    margin-bottom:.6rem;
+
+}
+
+.article-text{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    font-size:18px;
+    font-weight:300;
+    line-height: 2rem;
+   
+
+}
+.article-text img{
+    max-width: 100%;
+    padding-top:2rem;
+
+   
+
+}
+
+.problem-container{
+
+    height:auto;
+    min-height:60vh;
+    padding:80px 20px;
+    width: 100%;
+    background-color:  #F5F6FA;
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.problem-heading h5{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;    
+    font-size:1.2rem;
+    font-weight: 600;
+    
+    margin-bottom:.6rem;
+   
+   
+
+}
+.problem-text{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    font-size:1.4rem;
+    font-weight:500;
+    padding:2rem 0;
+    line-height: 2.6rem;
+   
+
+}
+
+
+.problem-text .semi{
+   
+    font-size:2rem;
+    
+    
+    }
+
+
+.problem-text .box{
+   background-color:rgb(184, 172, 255, 0.6);
+    
+    
+    }
+
+
+
+    .hypo-container{
+    
+        height:auto;
+        min-height:60vh;
+        padding:80px 20px;
+        width: 100%;
+        background-color:   #F5F6FA;
+        
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
+    .hypo-heading h5{
+        font-size:1.2rem;
+        font-weight: 600;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+        margin-bottom:.6rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+        
+       
+       
+    
+    }
+    .hypo-text{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+        font-size:1.4rem;
+        font-weight:500;
+        padding:2rem 0;
+        line-height: 2.6rem;
+       
+       
+    
+    }
+    
+    
+    .hypo-text .semi{
+       
+        font-size:2rem;
+        
+        
+        }
+    
+    
+    .hypo-text .box{
+       background-color: rgb(4, 236, 205, 0.4);
+        
+        
+        }
+    
+
+    .research-container{
+        height: auto;
+        padding:80px 20px;
+    width: 100%;
+    
+
+
+    }
+
+    .research-heading h5{
+        font-size:1.2rem;
+        font-weight: 600;
+        color: rgb(16, 209, 183);
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 800px;
+        margin-bottom:.6rem;
+
+    }
+    .research-text h3{
+        font-size:1.4rem;
+        font-weight:600;
+        line-height: 2.4rem;
+        padding-bottom:1rem;
+
+    }
+
+    .research-text .bullet p{
+    display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside;
+}
+
+    .research-text{
+        margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    font-size:18px;
+    font-weight:300;
+    line-height: 2rem;
+    padding-bottom:2rem;
+
+    }
+    .research-text img{
+        max-width: 100%;
+       padding-top:2rem;
+       
+    
+       
+    
+    }
+
+
+    .painpoint-container{
+
+        min-height:60vh;
+        height: auto;
+        padding:80px 20px;
+        width: 100%;
+        background-color:   #F5F6FA;
+         justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .painpoint{
+        margin-right: auto;
+        margin-left:auto;
+      width:100%;
+        justify-content: space-between;
+        max-width: 1000px;
+        
+    }
+
+
+
+    .painpoint-heading h5{ 
+        font-size:1.2rem;
+        font-weight: 600;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+        margin-bottom:.6rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+    .painpoint-box{
+        background-color: white;
+        padding:1.6rem;
+        border-radius: .4rem;
+        display: block;
+        margin:2.4rem 0;
+        box-shadow: 0 20px 25px -5px rgba(0,0,0,.08), 0 10px 10px -5px rgba(0,0,0,.04);
+        
+
+        
+    }
+    .painpoint-box p{
+        font-weight: 400;
+        font-size:1.2rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+
+    .ia-container{
+        height: auto;
+        padding:80px 20px;
+        width: 100%;
+
+    }
+
+    .ia-text{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 800px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 2rem;
+        padding-bottom:20px;
+      
+    }
+
+
+    .ia-text img{
+        max-width: 100%;
+    
+       
+    }
+
+    /* End project section */
+
+    /* Final */
+    
+    .finaldesign{
+        width: 100%;
+        height: 30vh;
+        background-color: white;
+    display: block;
+        background-image: url(final2.jpg);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        background-position: center;
+        
+    }
+
+    
+    .final {
+        min-height: 30vh;
+        background-color: white;
+       width:100%;
+      
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:80px 20px 0px 20px;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:800px;
+    }
+    .video-reverse{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:80px 20px 0px 20px;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:800px;
+
+    }
+
+    .video-reverse video{
+        width:80%;
+    }
+    
+    
+    .video video{
+        width:80%;
+    }
+    
+
+    .finaltext{
+        padding-top:2rem;
+    }
+    .finaltext h3{
+        font-size:1.4rem;
+        font-weight:600;
+        line-height: 2.4rem;
+    
+
+    }
+
+    .finaltext h5{
+        font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color:rgb(142, 124, 241);
+    padding-bottom:1rem;
+
+    }
+
+    .finaltext p{
+        font-size: 18px;
+    font-weight: 300;
+    line-height: 2rem;
+    }
+
+
+    .finaltext .number{
+        background-color:rgb(142, 124, 241);
+        width:40px;
+        height:40px;
+        display: flex;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        color:white;
+        margin-bottom:1rem;
+        font-size: 24px;
+        font-weight: 400px;
+    }
+
+
+   
+    /* Final */
+
+    .screen{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding:80px 0;
+       
+    }
+    .screen img{
+        width:100%;
+        height: auto;
+
+    }
+
+
+
+/* Footer Section */
+
+
+
+
+/* End Footer Section */
+
+@media only screen and (min-width:540px){
+
+    .finaldesign{
+        width: 100%;
+        height: 40vh;}
+
+}
+
+
+/*Media Query for desktop and tablet*/
+
+@media only screen and (min-width:768px){ 
+
+    .main-button{
+   
+        padding:16px 34px;
+        font-size:1rem;
+        letter-spacing: 1px;
+        
+    
+    }
+    
+    .project-text-container{
+        padding:100px 50px;
+        background-color: white;
+        display: block;
+    
+    
+    
+    
+    }
+
+    .project-img{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .detail-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+
+    }
+    
+    .project-text-container .overview{
+      display: block;
+       width: 60%;
+      
+
+    }
+    .project-text-container .detail{
+        display: block;
+        
+         width: 40%;
+        
+  
+      }
+
+      .article-container{
+          height: auto;
+          padding:100px 50px;
+          width: 100%;
+          
+          
+      }
+      
+      .article-text{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+         
+      
+      }
+      .article-text div{
+          width:45%;
+      }
+      .article-text img{
+          max-width: 100%;
+          padding:0;
+
+      
+         
+      
+      }
+
+      .problem-container{
+      
+        padding:100px 50px;
+          width: 100%;
+          
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+      
+      }
+
+      .hypo-container{
+      
+        padding:50px;
+        width: 100%;
+        
+    }
+      .research-container{
+          height: auto;
+          padding:100px 50px;
+      width: 100%;
+      
+  
+      }
+      .painpoint-container{
+
+        padding:100px 50px;
+
+
+    }
+    .painpoint-box{
+        width:30%;
+        height: auto;
+      
+  
+          
+      }
+    .painpoint{
+       display: flex;
+       flex-direction: row;
+       align-items: baseline;
+    }
+
+    .ia-container{
+        height: auto;
+        padding:100px 50px;
+        width: 100%;
+
+    }
+
+    .finaldesign{
+        width: 100%;
+        height: 50vh;}
+
+   
+
+   .video{
+        display: flex;
+        flex-direction: row;
+        padding:100px 50px 0px 50px;
+    }
+    
+    
+    .video video{
+        width:50%;
+    }
+
+
+    .finaltext{
+        width:50%;
+        padding:0;
+        padding-left:2rem;
+    }
+
+
+
+    .video-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        padding:100px 50px 0px 50px;
+    }
+
+    .video-reverse video{
+        width:50%;
+    }
+    
+    .video-reverse .finaltext{
+        width:50%;
+        padding:0;
+        padding-right:2rem;
+
+    }
+    
+
+
+    
+    
+}
+
+
+
+/*End Media Query for desktop and tablet*/
+
+
+/*Media Query for only desktop*/
+@media only screen and (min-width: 1200px){
+
+
+    .project-text-container{
+        padding:50px 100px 120px 100px;
+        background-color: white;
+        display: block;
+    
+    
+    
+    
+    }
+
+    .detail-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+
+    }
+    
+    .project-text-container .overview{
+      display: block;
+       width: 60%;
+      
+
+    }
+    .project-text-container .detail{
+        display: block;
+        
+         width: 40%;
+        
+  
+      }
+
+      .article-container{
+          height: auto;
+          padding:120px 100px;
+          width: 100%;
+          
+          
+      }
+      .problem-container{
+      
+          padding:100px;
+          width: 100%;
+          min-height:100vh;
+          
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+      
+      }
+      .problem-text{
+          font-size:1.6rem;
+          line-height: 2.8rem;
+      }
+
+      
+
+      .hypo-container{
+      
+        padding:100px;
+        width: 100%;
+        min-height:100vh;
+        
+    }
+
+    .hypo-text{
+        font-size:1.6rem;
+        line-height: 2.8rem;
+    }
+
+    .research-container{
+        height: auto;
+        padding:120px 100px;
+    width: 100%;
+    
+
+    }
+    .painpoint-container{
+
+        padding:120px 100px;
+      min-height:100vh;
+
+  }
+      
+
+    .ia-container{
+        height: auto;
+        padding:120px 100px;
+        width: 100%;
+
+    }
+
+
+    .finaldesign{
+        width: 100%;
+        height: 100vh;}
+
+
+
+
+        .video{
+            display: flex;
+            flex-direction: row;
+            padding:120px 0;
+        }
+
+        .video video{
+            padding:0 30px;
+        }
+
+
+
+        .video-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+            padding:120px 0;
+        }
+
+        .video-reverse video{
+            padding:0 30px;
+        }
+
+
+        
+
+
+}
+
+
+@media only screen and (min-width: 1900px){
+
+
+}
+
+/*End Media Query for only desktop*/
+
+
+
+
+
+/* Projects,about,extra pagese */

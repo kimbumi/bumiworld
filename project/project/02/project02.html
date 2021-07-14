@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kimbumi.github.io/bumiworld/project/02">
+    <meta property="og:title" content="Bumi Kim - project02">
+    <meta property="og:image" content="https://kimbumi.github.io/bumiworld/project/02/resource/img/billythumb.jpg">
+    <meta property="og:description" content="Mobile application UX/UI Design - Bumi Kim.">
+    <meta property="og:site_name" content="Bumi Kim">
+    <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="./resources/css/billy.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <title>Project02 - Billy</title>
+</head>
+<body>
+    <!-- nav bar-->
+    <nav id="nav-bar" class="container">
+        <header class="nav-bar">
+            <a href="https://kimbumi.github.io/bumiworld/project/" class="back">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </header>
+    </nav>
+     <!-- End nav bar-->
+        <main>
+            <section class="banner">
+                <div class="banner-container">
+                    <div class="banner-img-container">
+                        <div class="banner-img">
+                            <!--<h1 class="banner-heading">UX Case Study<br>Mobile App</h1>-->
+                        </div>
+                    </div>
+                    <div class="banner-text-container">
+                        <div class="banner-text">
+                            <h5>TIME</h5>
+                            <h6>Feb 2021</h6>
+                        </div>
+                        <div class="banner-text">
+                            <h5>ROLE</h5>
+                            <h6>UX designer</h6>
+                        </div>
+                        <div class="banner-text">
+                            <h5>TEAM</h5>
+                            <h6>Individual</h6>
+                        </div>
+                        <div class="banner-text">
+                            <h5>TOOLS</h5>
+                            <h6>Figma, Framer</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="overview">
+                <div class="overview-container">
+                    <article class="overview-text-container">
+                        <h3 class="heading">Overview</h3>
+                        <p class="body-script">Billy is a mobile application designed to help people to manage their subscriptions efficiently. For this project, I took process of defining, analyzing, ideation, prototyping.</p>
+                    </article>
+                    <figure class="overview-img-container">
+                        <div class="overview-img"></div>
+                    </figure>  
+                </div>
+            </section>
+            
+            <section class="button">
+                <a href="#finaldesign"><button>View Final Design</button></a>
+            </section>
+
+
+            <section class="background">
+                <div class="background-container">
+                    <article>
+                        <h3 class="heading">1. Background</h3>
+                        <p class="body-script">Subscription market keeps growing and I've subscribed a lot of services, I found it hard to keep track of my subscriptions. How might I solve this?</p>
+                    </article>
+                    <figure class="img-container">
+                        <div class="background-img"></div>
+                    </figure>  
+                </div>
+            </section>
+
+            <section class="research-question">
+                <div class="research-question-container">
+                    <article>
+                        <h3 class="heading">2. Research question</h3>
+                        <div class="textbox">
+                            <p class="body-script">How do people manage their subscriptions and payment? What are some problems there?</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+
+
+<!-- Defining start-->
+
+            <section class="define">
+                <div class="define-container">
+
+
+                    <article>
+                        <h3 class="heading">3. Defining & Research</h3>
+                            <p class="body-script">to understand market and users, I took several research methods.</p>
+                    </article>
+
+                    <!--
+
+                        <article class="sub-article-container">
+                            <div class="subtitle">
+                                <div class="upperline"></div>
+                                <h4>Lifestyle and market</h4>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil autem doloremque laudantium animi odit similique quam iusto rerum cumque saepe repellendus, voluptas eligendi quis quia omnis quibusdam nisi tenetur perspiciatis.</p>
+                        </article>
+                    -->
+
+
+                        <article class="sub-article-container">
+                            <div class="subtitle">
+                                <div class="upperline"></div>
+                                <h4>Quantitative survey</h4>
+                            </div>
+                            <div class="survey-container">
+                                <p class="survey-question">Q: How many services do people subscribe?</p>
+                                <ul class="survey">
+                                    <li id="answer">0 - 2 (682)</li>
+                                    <li>3 - 5 (523)</li>
+                                    <li>More than 6 (38)</li>
+                                </ul>
+                            </div>
+                            <div class="survey-container">
+                                <p class="survey-question">Q: How do they get information of their subscription payment?</p>
+                                <ul class="survey">
+                                    <li id="answer">Checking on their bill (466)</li>
+                                    <li>Through e-mail or message (285)</li>
+                                    <li>Go to an official website or app (256)</li>
+                                    <li>Others (19)</li>
+                                </ul>
+                            </div>
+                            <div class="survey-container">
+                                <p class="survey-question">Q: How many people have struggled with unsubscribing?</p>
+                                <ul class="survey">
+                                    <li id="answer">63% said they have struggled</li>
+                                    <li>37% said no</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="sub-article-container">
+                            <div class="subtitle">
+                                <div class="upperline"></div>
+                                <h4>Qualitative interview</h4>
+                            </div>
+                            <p>I collected over 100 opinions shared from respondents.</p>
+                            <div class="quotation-container">
+                                <div class="wrapper">
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"Every time when I need to unsubscribe, I have to figure out where it is. It's annoying and complicated."</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"I want to get informed about recurring payment before payment due."</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"After free trial, it turns into a recurring payment without telling me. So I had to pay for it, even though I didn't want to use."</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"I don't memorize payment due, I often forget to cancel my subscription. I even paid for 6 months fee which I ended up using only once."</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"Raising prices pisses me off and they don't tell me about it."</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"I use several credit cards, so I often forget which card I use for which subscription."</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"When my bank account doesn't have enough balance, it causes payment failure."</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="quotationbox">
+                                            <p>"Apple subscription just informed me of charge fee but not what it's about."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+                           
+                        <article class="sub-article-container">
+                            <div class="subtitle">
+                                <div class="upperline"></div>
+                                <h4>Other methods</h4>
+                            </div>
+                            <p>I used user persona & user journey method to make sure if there are missing pain-points and to verify my result of research. I create two types of user personas. Since according to my survey, most people only have less than 2 subscriptions, they might have relatively less difficulty on managing subscriptions compared to people who have more than 5 subscriptions.</p>
+                            <figure class="img-container">
+                                <img class="userpersona" src="./resources/img/User.jpg" alt="">
+                            </figure>
+                        </article>  
+
+                        <aside class="comment">
+                            <div class="commentbox">
+                                <span class="emoji">&#128204;</span>
+                                <div>
+                                    <p><span class="highlight-blue">Before research</span></p>
+                                    <p>My assumption was people might struggle with keeping track of their subscriptions</p>
+                                </div>
+                                <div>
+                                    <p><span class="highlight-blue">After research</span></p>
+                                    <p>Not many people struggle with managing their subscriptions, since significant number of people have only 0 - 2 subscriptions. They are rather struggling with cancelation experience.</p>
+                                </div>
+                            </div>
+                        </aside>     
+                    
+               
+                </div>
+            </section>
+
+
+
+<!-- Defining End-->
+
+
+            <section class="goal">
+                <div class="goal-container">
+                    <article>
+                        <h3 class="heading">4. Goal</h3>
+                        <div class="textbox">
+                            <p class="body-script">Help people not to spend unnecessary expense on their unwanted subscriptions.</p>
+                        </div>
+                        <div class="textbox">
+                            <p class="body-script">Let people have a smooth experience of canceling subscriptions.</p>
+                        </div>
+                        <div class="textbox">
+                            <p class="body-script">Enable people to easily check information about their subscriptions at a glance.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+
+
+<!-- Insight start-->
+
+
+            <section class="insight">
+                <div class="insight-container">
+                    <article>
+                        <h3 class="heading">5. Insight</h3>
+                            <p class="body-script">I analyzed and grouped problems that I found through methods above. And made suggestions based on that.</p>
+                    </article>            
+                    
+                    <article>
+                            <div class="solution-container">
+                                    <ol class="solution-list">
+                                        <h4>Solutions</h4>
+                                        <li>Push notification before payment due, trial due.</li>
+                                        <li>Simplify cancelation steps with a direct button.</li>
+                                        <li>Let users know which account or card they linked and how much balance left.</li>
+                                        <li>Let users know about change of price.</li>
+                                        <li>Show users their subscriptions and information of them at a glance.</li>
+                                        <li>Show users comparison of price between services, recommend them alternative services to lower their bill.</li>
+                                        <li>Reservation for unsubscribing.</li>
+                                    </ol>
+                                </div>
+                    </article>
+
+                    <article>
+                       <div class="solution-container">
+                                    <ol class="solution-list">
+                                        <h4>Value prioritizing</h4>
+                                        <li><span class="highlight-blue">Simplify cancelation steps with a direct link.</span></li>
+                                        <li><span class="highlight-blue">Push notification before payment due, trial due.</span></li>
+                                        <li><span class="highlight-blue">Show users their subscriptions and information of them at a glance.</span></li>
+                                    </ol>
+                                </div>
+                    </article>
+                    <aside class="comment">
+                        <div class="commentbox">
+                            <span class="emoji">&#128161;</span>
+                            <div>
+                                <p>The reason that I decided to focus on 3 priory values is to optimize values and usability. Those three features can cover the most troublesome pain-points. Plus, other feature can require user's accounts to connect. I figured the simpler, the more approachable. Other solutions could be done in a later version of the product. This approach can enhance productivity.</p>
+                            </div>
+                        </div>
+                    </aside>     
+                </div>
+            </section>
+
+<!-- Insight End-->
+
+
+            <section class="ideation">
+                <div class="ideation-container">
+                    <h3 class="heading">6. Ideation</h3>
+
+                    <figure class="bottompadding">
+                        <figcaption><h4>Information Architecture</h4></figcaption>
+                        <img class="ia" src="./resources/img/ia.jpg" alt="">
+                    </figure>
+
+                    <figure class="bottompadding">
+                        <figcaption><h4>Wireframes</h4></figcaption>
+                        <img class="wireframe" src="./resources/img/wireframes.jpg" alt="">
+                    </figure>     
+
+                    <figure> 
+                        <figcaption><h4>Sketch</h4></figcaption>
+                        <img class="sketch" src="./resources/img/sketch2.jpeg" alt="">
+                    </figure>          
+                    
+
+                        
+                </div>
+            </section>
+
+
+<!-- Design start-->
+
+            <section class="design-system">
+                <div class="design-system-container">
+                    <article>
+                        <h3 class="heading">7. Design System</h3>
+                        <p class="body-script">Using Figma tool, I restricted UI colors, font-weight, style for consistency. I created variants from one component another. This keeps whole design consistent as well as helps me effectively manage design components.</p>
+                    </article>
+                    <figure class="img-container">
+                        <div class="design-system-img"></div>
+                    </figure>
+                               
+                </div>
+            </section>
+
+            <section id="finaldesign" class="prototyping">
+                <div class="prototyping-container">
+                    <article>
+                        <h3 class="heading">8. Prototyping</h3>
+                    </article>
+
+                    <figure>
+                        <figcaption class="video-text">
+                            <h4>Onboarding</h4>
+                            <p>Quick onboarding. Users can directly use the service without having to sign up or log in.</p>
+                        </figcaption>
+                        <div class="video-container"> 
+                            <video autoplay loop muted playsinline>
+                                <source src="./resources/img/01.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </figure>
+
+
+                    <figure>
+                        <figcaption class="video-text">
+                            <h4>Customizable</h4>
+                            <p>Users can customize their own subscriptions. It prevent user's frustration when they can't find their subscriptions in search.</p>
+                        </figcaption>
+                        <div class="video-container"> 
+                            <video autoplay loop muted playsinline>
+                                <source src="./resources/img/02.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <figcaption class="video-text">
+                            <h4>Detail input</h4>
+                            <p>For the details of each subscription, users need to input information. With auto filled system, users don't need to fill all the information. I used wheel picker, toggle for input materials to ease annoyance of manual typing.</p>
+                        </figcaption>
+                        <div class="video-container"> 
+                            <video autoplay loop muted playsinline>
+                                <source src="./resources/img/03.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <figcaption class="video-text">
+                            <h4>Notification</h4>
+                            <p>Users can turn on notification and they also can set the timimg of recieving notification.</p>
+                        </figcaption>
+                        <div class="video-container-bigger"> 
+                            <video autoplay loop muted playsinline>
+                                <source src="./resources/img/07.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <figcaption class="video-text">
+                            <h4>Calendar & Spending</h4>
+                            <p>Users can swap from list to calendar by tapping the segmented controler. Calendar feature can give users more intuitive overview of their subscriptions. Spend feature helps users to check their spending on subscriptions and users can sort breakdown by categories, payment methods, subscriptions.</p>
+                        </figcaption>
+                        <div class="video-container"> 
+                            <video autoplay loop muted playsinline>
+                                <source src="./resources/img/04.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <figcaption class="video-text">
+                            <h4>Easy unsubscribing</h4>
+                            <p>As my research suggests, it's revealed that most of respondents have difficulty on unsubscribing. With a button that guide users directly to the link, users don't need to struggle with finding out the page.</p>
+                        </figcaption>
+                        <div class="video-container"> 
+                            <video autoplay loop muted playsinline>
+                                <source src="./resources/img/05.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <figcaption class="video-text">
+                            <h4>Organazing lists</h4>
+                            <p>Subscriptions in the list are draggable so that users can re-organize the order of subscriptions. And users can easily remove subscriptions by sliding, which simplify steps of deleting them.</p>
+                        </figcaption>
+                        <div class="video-container-bigger"> 
+                            <video autoplay loop muted playsinline>
+                                <source src="./resources/img/06.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </figure>
+
+                    
+
+                    <figure class="figma-container">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fz13agwsmj1azxUa7nJU1AJ%2FBilly-project-final%3Fnode-id%3D3%253A81%26viewport%3D249%252C44%252C0.10395444184541702%26scaling%3Dcontain" allowfullscreen></iframe>
+                    </figure>
+
+                               
+                </div>
+            </section>
+
+
+            <section class="takeaway">
+                <div class="takeaway-container">
+                    <article>
+                        <h3 class="heading">Take away</h3>
+                        <p class="body-script">Compared to my first UX project, Guider,
+                            I saved much time designing UI with auto layout tool in Figma.
+                           And by creating variants from an original component, I could more effectively manage components and keep consistent.
+                           Which resulted in enhancing productivity and lowering time that I spent.
+                           <br><br>
+                           What I need to improve is I shoud do more rapid prototyping and not to be perfect at one time.</p>
+                    </article>
+                </div>
+            </section>
+
+
+<!-- Design start-->
+
+        </main>
+
+
+     
+
+<!--Footer Section-->
+<!-- 
+<section id="footer" class="footer">
+    <div class="footer-container">
+        <div class="copyright">
+            <p>© 2020 Copyright by BumiKim</p>
+        </div>
+        <div class="sns">
+            <div class="sns-icon">
+                <a href="https://www.behance.net/bumi1/projects" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="https://www.linkedin.com/in/bumi-kim-35009a1a7/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCfgkLZpQJB0mxIP5SgsNNhg/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                 <a href="https://github.com/kimbumi" target="_blank"><i class="fab fa-github"></i></i></a>
+            </div>
+        </div>
+    </div> -->
+
+</section>
+
+
+
+<!--Footer Section End-->
+
+
+<script src="project.js"></script>  
+</body>
+</html>
