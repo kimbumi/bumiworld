@@ -141,7 +141,9 @@ a{
 }
 
 .link{
-    color: var(--bg-gray)
+    color: var(--bg-gray);
+    width: 90%;
+    word-break: break-all;
 }
 .img{
     width: 100%;
@@ -253,4 +255,11 @@ p{
         margin-bottom: 4rem;
 
     }
+
+    .btn{
+
+        min-width: 40%;
+
+    }
+
 }
