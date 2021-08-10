@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@200;300;400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+:root{
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:400;
+    --secondary-font: 'IBM Plex Mono', monospace;
+    --secondary-font-sans: 'IBM Plex Sans', sans-serif;
+    --border-radius: 10px;
+    color: #2e2e38;
+    --text-gray: #323250;
+
+    --bg-gray: #b6b6c2;
+    --bg-point: #4fd49d;
+    --bg-gradient: linear-gradient(90deg, rgba(0, 68, 73, 0) 0%, rgba(0, 68, 73, 0.767) 75%);
+    --transition-speed: 0.2s;
+    --transition-speed: 0.2s;
+    --max--width: 1200px;
+
+}
+
+
+
+
+body,
+html
+{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: rgba(17,17,17,1)
+}
+
+
+
+body::-webkit-scrollbar{
+    width: 0.25rem
+}
+
+body::-webkit-scrollbar-track{
+    background-color: rgb(31, 31, 31);
+}
+body::-webkit-scrollbar-thumb{
+    background-color:var(--bg-gray);
+}
+::selection {
+    background: var(--bg-gray);
+    color: #fff;
+ }
+
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+  /* Nav bar */
+  .container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+
+
+}
+
+#nav-bar {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	
+}
+.nav-bar {
+
+	left: 0;
+	top: 0;
+	padding:16px;
+	width: 100%;
+}
+
+.back {
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    color: rgb(112, 112, 112);
+    border-radius: 50px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05), 
+    0 2px 2px rgba(0,0,0,0.05), 
+    0 4px 4px rgba(0,0,0,0.05), 
+    0 8px 8px rgba(0,0,0,0.05),
+    0 16px 16px rgba(0,0,0,0.05);
+    border:0.5px solid rgb(240, 240, 240);    
+}
+
+
+.back i {
+    font-size: 21px;
+    position:relative;
+    color: rgb(112, 112, 112);
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.section{
+    position: relative;
+    width: 100%;
+    height:100%;
+    min-height: 40vh;
+    line-height:1.6rem;
+    background-color: rgb(20, 20, 20);
+
+    
+}
+
+
+.flexGrid{
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(50vh, auto);
+
+}
+
+/* .project-item:nth-child(odd):last-of-type{
+    grid-column: 1 / span 2;
+} */
+
+.project-item{
+    width: 100%;
+    height:100%;
+    position: relative;
+    
+}
+
+.project-item:hover .img{
+   opacity: 0.8;
+    
+}
+
+.img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.projectName{
+    position: absolute;
+    display: block;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding:3rem;
+    /* width: 100%;
+    height:100%; */
+    font-size: 7.5rem;
+    font-family: var(--text-primary);
+    color: var(--text-primary);
+    /* text-align: center; */
+    font-weight: 500;
+    line-height: 3rem;
+    z-index: 1001;
+}
+
+.projectName span{
+    font-size: 3.5rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+  
+
+    .flexGrid{
+        grid-template-columns: repeat(auto-fit, minmax(50%, auto));
+        grid-auto-rows: minmax(40vh, auto);
+
+    
+    }
+    .project-item:nth-child(odd):last-of-type{
+        grid-column: 1 / span 1;
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+    .flexGrid{
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(40vh, auto);
+    }
+}
